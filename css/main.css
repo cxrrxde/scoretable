@@ -81,6 +81,10 @@ button:hover{
     user-select: none;
 }
 @media screen and (max-width:840px){
+    .inner-wrapper{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .guest-title,.home-title{
         font-size: 50px;
     }
@@ -107,6 +111,10 @@ button:hover{
     }
 }
 @media screen and (max-width: 470px){
+    .inner-wrapper{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
     .guest-title,.home-title{
         font-size: 35px;
         line-height: 40px;
