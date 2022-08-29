@@ -11,6 +11,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .inner-wrapper{
     display: flex;
@@ -60,7 +63,7 @@ button{
     cursor:pointer;
     border-radius: 4px;
 }
-button:not(:last-child){
+.buttons button:not(:last-child){
     margin-right: 10px;
 }
 button:hover{
@@ -72,9 +75,73 @@ button:hover{
     text-transform: uppercase;
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
     line-height: 35px;
     color:#881337;
     margin-bottom: 20px;
     user-select: none;
+}
+@media screen and (max-width:840px){
+    .guest-title,.home-title{
+        font-size: 50px;
+    }
+    .score{
+        font-size: 80px;
+        max-width: 250px;
+        padding: 20px 0px;
+        line-height: 80px;
+    }
+    #winner-guest,#winner-home{
+        font-size: 25px;
+    }
+    .inner-wrapper{
+        padding: 0px 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .score{
+        max-width: 200px;
+    }
+    button{
+        font-size: 20px;
+        line-height: 17px;
+    }
+}
+@media screen and (max-width: 470px){
+    .guest-title,.home-title{
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 0px;
+    }
+    .score{
+        font-size: 50px;
+        max-width: 150px;
+        padding: 5px 0px;
+    }
+    #winner-guest,#winner-home{
+        font-size: 18px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .buttons button:not(:last-child){
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .guest-title,.home-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .score{
+        font-size: 30px;
+        max-width: 100px;
+    }
+    #winner-guest,#winner-home{
+        font-size: 16px;
+    }
 }
